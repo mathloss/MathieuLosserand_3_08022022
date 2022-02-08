@@ -76,7 +76,6 @@ header h1 {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC 95%);
   border: none;
   border-radius: 25px;
-  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
 .fonctionnement {
@@ -102,6 +101,7 @@ header h1 {
   display: flex;
   align-items: center;
   border-radius: 20px;
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.1);
 }
 .fonctionnement .btn-fonct i {
   padding-left: 10px;
@@ -177,6 +177,7 @@ header h1 {
   margin-bottom: 20px;
   border-radius: 20px;
   margin: 0 20px 20px 0;
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.1);
 }
 .restaurant-card img {
   border-radius: 20px 20px 0 0;
@@ -217,6 +218,81 @@ header h1 {
   margin: 0;
   padding-left: 20px;
   padding-top: 5px;
+}
+
+.titre-restaurant {
+  padding-top: 20px;
+  font-family: "Shrikhand", cursive;
+}
+
+.image-menu img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.nom-restaurant {
+  background-color: #F6F6F6;
+  position: relative;
+  bottom: 70px;
+  border-radius: 40px 40px 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.nom-restaurant h1 {
+  font-family: "Shrikhand", cursive;
+  margin: 0;
+  padding: 30px 0 20px 30px;
+}
+.nom-restaurant i {
+  padding-right: 50px;
+}
+
+.plats {
+  background-color: #F6F6F6;
+  margin: 0;
+}
+.plats h2 {
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.all-entrees {
+  background-color: #F6F6F6;
+  margin-left: 20px;
+}
+
+.plat-box {
+  width: 88%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.plat-box h3, .plat-box p {
+  margin: 0;
+  padding-left: 20px;
+}
+.plat-box h3 {
+  font-size: 15px;
+  padding-top: 10px;
+  font-weight: 700;
+}
+.plat-box p {
+  padding-top: 5px;
+  font-size: 14px;
+}
+.plat-box .prix {
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.description-prix {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 10px;
 }
 
 footer {

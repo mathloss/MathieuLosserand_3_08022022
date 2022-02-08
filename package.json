@@ -6,6 +6,10 @@
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./css/style.css"  
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathloss/MathieuLosserand_3_08022022.git"
+  },
   "author": "Mathieu Losserand",
   "license": "ISC"
 }
