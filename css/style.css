@@ -1,0 +1,253 @@
+* {
+  box-sizing: content-box;
+}
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+
+.titre-accueil {
+  font-family: "Shrikhand", cursive;
+  display: flex;
+  justify-content: center;
+}
+
+.localisation {
+  background-color: #EAEAEA;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.localisation .localisation-icone-text {
+  margin: 0 auto;
+}
+.localisation input {
+  width: 180px;
+  border: none;
+  background-color: #EAEAEA;
+  padding-left: 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.header-text {
+  margin: 0;
+  background-color: #F6F6F6;
+}
+.header-text .header-text-h2 {
+  padding: 30px 0 20px 0;
+}
+.header-text h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+.header-text .header-text-p {
+  padding-bottom: 20px;
+}
+.header-text p {
+  margin: 0;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+}
+.header-text .header-button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+}
+.header-text button {
+  align-items: center;
+  width: 250px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC 95%);
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.fonctionnement {
+  padding: 0 0 30px 20px;
+}
+.fonctionnement h2 {
+  font-size: 1.5rem;
+}
+@media (min-width: 600px) {
+  .fonctionnement .all-btn-fonct {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.fonctionnement .btn-fonct {
+  width: 88%;
+  min-width: 300px;
+  max-width: 380px;
+  height: 80px;
+  background-color: #F6F6F6;
+  margin: 0 0 20px 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+}
+.fonctionnement .btn-fonct i {
+  padding-left: 10px;
+  color: #7E7E7E;
+}
+.fonctionnement .btn-fonct p {
+  padding-left: 20px;
+  color: black;
+  font-weight: bold;
+}
+@media (min-width: 600px) {
+  .fonctionnement .btn-fonct {
+    margin-right: 20px;
+  }
+}
+.fonctionnement .num {
+  background-color: #9356DC;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: -13px;
+}
+.fonctionnement .num p {
+  padding-left: 0;
+  color: white;
+  font-weight: bold;
+}
+
+.titre-restaurant {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.titre-restaurant i {
+  padding-left: 30px;
+  color: black;
+}
+.titre-restaurant h1 {
+  margin: 0 auto;
+  font-size: 2.5rem;
+}
+
+.restaurants {
+  padding: 30px 20px 20px 20px;
+  background-color: #F6F6F6;
+}
+.restaurants h2 {
+  font-size: 1.5rem;
+}
+
+.cont-restaurant-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 770px) {
+  .cont-restaurant-card {
+    flex-direction: column;
+  }
+}
+
+.restaurant-card {
+  width: 335px;
+  height: 250px;
+  background-color: white;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  margin: 0 20px 20px 0;
+}
+.restaurant-card img {
+  border-radius: 20px 20px 0 0;
+  height: 170px;
+}
+.restaurant-card .image-restaurant {
+  height: 170px;
+  position: relative;
+}
+.restaurant-card .text-restaurant {
+  font-weight: bold;
+  color: #56BAA2;
+  border-radius: 3px;
+  width: 80px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  background-color: #99E2D0;
+  justify-content: center;
+  position: relative;
+  bottom: 160px;
+  left: 240px;
+}
+.restaurant-card .all-infos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.restaurant-card .all-infos i {
+  padding-right: 20px;
+}
+.restaurant-card .text-infos h3 {
+  margin: 0;
+  padding: 10px 0 0 20px;
+}
+.restaurant-card .text-infos p {
+  margin: 0;
+  padding-left: 20px;
+  padding-top: 5px;
+}
+
+footer {
+  background-color: #353535;
+  padding-bottom: 30px;
+  font-size: 1.2rem;
+  color: white;
+}
+footer h1 {
+  font-size: 1.5rem;
+  font-family: "Shrikhand", cursive;
+  margin-top: 0;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+footer ul, footer a {
+  font-family: "Roboto";
+  list-style: none;
+  line-height: 1rem;
+}
+footer i {
+  font-size: 1.2rem;
+  width: 1.2rem;
+  color: white;
+  padding-right: 0.3rem;
+  padding-left: 0.3rem;
+}
+footer a {
+  color: white;
+  font-style: normal;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
