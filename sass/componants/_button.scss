@@ -1,12 +1,19 @@
-button {               
-    align-items: center;
-    width:250px;
-    height: 50px;
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    background: linear-gradient(to bottom right,#FF79DA, #9356DC 95%);
-    border: none;
-    border-radius: 25px;
-    
+.colored-button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    button {               
+        align-items: center;
+        width:250px;
+        height: 50px;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        background: linear-gradient(to bottom right,#FF79DA, #9356DC 95%);
+        border: none;
+        border-radius: 25px;
+        
+    }
 }
+
