@@ -1,6 +1,8 @@
-@import "general";
-@import "accueil";
-@import "fonctionnement";
-@import "restaurants";
-@import "page-restaurant";
-@import "footer";
+@import "./layout/body";
+@import "./utils/variables";
+@import "./layout/footer";
+@import "./componants/fonctionnement";
+@import "./componants/localisation";
+@import "./pages/index";
+@import "./pages/restaurants";
+
