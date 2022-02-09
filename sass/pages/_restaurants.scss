@@ -1,6 +1,6 @@
 .titre-restaurant {
     padding-top: 20px;
-    font-family: "Shrikhand", cursive;
+    
 }
 .image-menu {    
     img {
@@ -9,7 +9,7 @@
     }
 }
 .nom-restaurant {
-    background-color: $lightgrey;
+    @include lightgrey-bc;
     position: relative;
     bottom: 70px;
     border-radius: 40px 40px 0 0;

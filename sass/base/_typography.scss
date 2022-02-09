@@ -1,0 +1,22 @@
+// Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+
+$font-logo-titre:'Shrikhand', cursive;
+$font-text:'Roboto', sans-serif;
+
+h1 {
+    font-family: $font-logo-titre;
+    font-weight: normal;
+}
+h2, h3, h4, h5, p, li, div, a {
+    font-family: $font-text;
+}
+a{
+    text-decoration: none;
+    color: black;
+    :hover {
+        color:#0065FC;        
+    }
+}

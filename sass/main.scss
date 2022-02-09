@@ -1,8 +1,12 @@
 @import "./layout/body";
+@import "./base/typography";
 @import "./utils/variables";
+@import "./utils/mixin";
 @import "./layout/footer";
 @import "./componants/fonctionnement";
 @import "./componants/localisation";
 @import "./pages/index";
+@import "./componants/restaurant-card";
+@import "./componants/button";
 @import "./pages/restaurants";
 

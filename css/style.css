@@ -1,9 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 * {
   box-sizing: content-box;
 }
 
-body {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+h1 {
+  font-family: "Shrikhand", cursive;
+  font-weight: normal;
+}
+
+h2, h3, h4, h5, p, li, div, a {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a :hover {
+  color: #0065FC;
 }
 
 footer {
@@ -154,7 +169,79 @@ header h1 {
   padding-bottom: 50px;
   margin-bottom: 20px;
 }
-.header-text button {
+
+.restaurants {
+  padding: 30px 20px 20px 20px;
+  background-color: #F6F6F6;
+}
+.restaurants h2 {
+  font-size: 1.5rem;
+}
+
+.cont-restaurant-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.restaurant-card {
+  width: 335px;
+  height: 250px;
+  background-color: white;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+.restaurant-card img {
+  border-radius: 20px 20px 0 0;
+  height: 170px;
+}
+.restaurant-card .image-restaurant {
+  height: 170px;
+  position: relative;
+}
+.restaurant-card .text-restaurant {
+  font-weight: bold;
+  color: #56BAA2;
+  border-radius: 3px;
+  width: 80px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  background-color: #99E2D0;
+  justify-content: center;
+  position: relative;
+  bottom: 160px;
+  left: 240px;
+}
+.restaurant-card .all-infos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.restaurant-card .all-infos i {
+  padding-right: 20px;
+}
+.restaurant-card .text-infos h3 {
+  margin: 0;
+  padding: 10px 0 0 20px;
+}
+.restaurant-card .text-infos p {
+  margin: 0;
+  padding-left: 20px;
+  padding-top: 5px;
+}
+@media (min-width: 600px) {
+  .restaurant-card .all-cards-restaurant {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+button {
   align-items: center;
   width: 250px;
   height: 50px;
@@ -168,7 +255,6 @@ header h1 {
 
 .titre-restaurant {
   padding-top: 20px;
-  font-family: "Shrikhand", cursive;
 }
 
 .image-menu img {
