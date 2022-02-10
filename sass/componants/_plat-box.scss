@@ -1,0 +1,30 @@
+.plat-box {
+    width: 350px;
+    height:70px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .1);
+    margin-bottom: 20px;
+        h3, p {
+            @include margin0;        
+            padding-left: 10px;
+    }
+    h3 { 
+        font-size: 16px;
+        padding-top: 15px;        
+        font-weight: 700;}
+    p {
+        padding-top: 8px;
+        font-size: 14px;
+    }
+    .prix {
+        margin-right: 20px;
+        font-weight: bold;
+    }
+}
+.description-prix {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}

@@ -7,23 +7,24 @@ footer{
         font-family: "Shrikhand", cursive;
         margin-top: 0;
         padding-top: 20px;
-        padding-left: 40px;
+        padding-left: 20px;
+        
     }
     ul, a {
         font-family: "Roboto";
         list-style: none;
-        line-height: 1rem;
+        line-height: 10px;
+        padding-left: 20px;
     }
     i {
-        font-size: 1.2rem;
-        width: 1.2rem;
+        font-size: 12px;
         color:white;
-        padding-right: .3rem;
-        padding-left: .3rem;
     }
     a {
         color:white;
         font-style: normal;
         text-decoration: none;
+        padding-left: 0;
         }
 }
+

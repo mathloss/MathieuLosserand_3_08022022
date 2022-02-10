@@ -5,7 +5,7 @@
     margin-bottom: 20px;
     button {               
         align-items: center;
-        width:250px;
+        width:fit-content;
         height: 50px;
         font-size: 18px;
         font-weight: bold;
@@ -14,6 +14,12 @@
         border: none;
         border-radius: 25px;
         @include boxshadow1;
+        p {
+            @include margin0;
+            padding-left: 40px;
+            padding-right: 40px;
+            font-weight: lighter;
+        }
         
     }
 }

@@ -38,24 +38,23 @@ footer h1 {
   font-family: "Shrikhand", cursive;
   margin-top: 0;
   padding-top: 20px;
-  padding-left: 40px;
+  padding-left: 20px;
 }
 footer ul, footer a {
   font-family: "Roboto";
   list-style: none;
-  line-height: 1rem;
+  line-height: 10px;
+  padding-left: 20px;
 }
 footer i {
-  font-size: 1.2rem;
-  width: 1.2rem;
+  font-size: 12px;
   color: white;
-  padding-right: 0.3rem;
-  padding-left: 0.3rem;
 }
 footer a {
   color: white;
   font-style: normal;
   text-decoration: none;
+  padding-left: 0;
 }
 
 .fonctionnement {
@@ -151,7 +150,7 @@ footer a {
 }
 .colored-button button {
   align-items: center;
-  width: 250px;
+  width: fit-content;
   height: 50px;
   font-size: 18px;
   font-weight: bold;
@@ -161,11 +160,16 @@ footer a {
   border-radius: 25px;
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.1);
 }
+.colored-button button p {
+  margin: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: lighter;
+}
 
 .trait-vert {
   width: 40px;
   margin-top: -5px;
-  margin-left: 20px;
   padding-bottom: 20px;
   border-top: 3px #99E2D0 solid;
 }
@@ -180,6 +184,39 @@ footer a {
 }
 .titre-restaurant h1 {
   margin: 0 auto;
+}
+
+.plat-box {
+  width: 350px;
+  height: 70px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.plat-box h3, .plat-box p {
+  margin: 0;
+  padding-left: 10px;
+}
+.plat-box h3 {
+  font-size: 16px;
+  padding-top: 15px;
+  font-weight: 700;
+}
+.plat-box p {
+  padding-top: 8px;
+  font-size: 14px;
+}
+.plat-box .prix {
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.description-prix {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 10px;
 }
 
 header h1 {
@@ -302,8 +339,16 @@ header h1 {
   }
 }
 
-.titre-restaurant {
-  padding-top: 20px;
+.cont-restaurant-card {
+  padding-bottom: 10px;
+}
+
+.titre-restaurant i {
+  padding-top: 10px;
+}
+.titre-restaurant h1 {
+  position: relative;
+  left: -20px;
 }
 
 .image-menu img {
@@ -311,11 +356,14 @@ header h1 {
   object-fit: cover;
 }
 
-.nom-restaurant {
+.menu-complet {
   background-color: #F6F6F6;
-  position: relative;
-  bottom: 70px;
   border-radius: 40px 40px 0 0;
+  position: relative;
+  bottom: 50px;
+}
+
+.nom-restaurant {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -323,57 +371,35 @@ header h1 {
 }
 .nom-restaurant h1 {
   font-family: "Shrikhand", cursive;
+  font-size: 30px;
   margin: 0;
-  padding: 30px 0 20px 30px;
+  padding: 30px 0 20px 20px;
 }
-.nom-restaurant i {
-  padding-right: 50px;
-}
-
-.plats {
-  background-color: #F6F6F6;
-  margin: 0;
-}
-.plats h2 {
-  padding-left: 20px;
-  font-size: 16px;
+.nom-restaurant img {
+  padding-right: 40px;
+  width: 35px;
+  height: auto;
 }
 
-.all-entrees {
-  background-color: #F6F6F6;
-  margin-left: 20px;
-}
-
-.plat-box {
-  width: 88%;
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-.plat-box h3, .plat-box p {
-  margin: 0;
-  padding-left: 20px;
-}
-.plat-box h3 {
-  font-size: 15px;
-  padding-top: 10px;
-  font-weight: 700;
-}
-.plat-box p {
-  padding-top: 5px;
-  font-size: 14px;
-}
-.plat-box .prix {
-  margin-right: 20px;
-  font-weight: bold;
-}
-
-.description-prix {
+.entreesplatsdesserts {
+  padding: 0 0 0 10px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 10px;
+}
+
+.all-plats, .all-entrees, .all-desserts {
+  margin-right: 20px;
+}
+.all-plats h2, .all-entrees h2, .all-desserts h2 {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.colored-button {
+  padding-top: 30px;
+  padding-bottom: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */

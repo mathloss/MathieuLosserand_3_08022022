@@ -1,6 +1,14 @@
+.cont-restaurant-card {
+    padding-bottom: 10px;
+}
 .titre-restaurant {
-    padding-top: 20px;
-    
+    i {
+        padding-top: 10px;
+    }
+    h1 {
+        position: relative;
+        left:-20px;
+    }
 }
 .image-menu {    
     img {
@@ -8,62 +16,46 @@
         object-fit: cover;
     }
 }
-.nom-restaurant {
-    @include lightgrey-bc;
+.menu-complet {
+    @include lightgrey-bc; 
+    border-radius: 40px 40px 0 0;  
     position: relative;
-    bottom: 70px;
-    border-radius: 40px 40px 0 0;
+    bottom: 50px;
+}
+
+.nom-restaurant {    
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     h1{
         font-family: "Shrikhand", cursive;
+        font-size: 30px;
         @include margin0;
-        padding: 30px 0 20px 30px;
+        padding: 30px 0 20px 20px;
     }
-    i {
-        padding-right: 50px;
-    }
-}
-.plats {
-    background-color: $lightgrey;
-    @include margin0;
-    h2 {
-        padding-left: 20px;
-        font-size: 16px;
+    img {
+        padding-right: 40px;
+        width:35px;
+        height: auto;
+        
     }
 }
-.all-entrees {
-    background-color: $lightgrey;
-    margin-left: 20px;
-}
-.plat-box {
-    width: 88%;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .1);
-    margin-bottom: 20px;
-        h3, p {
-            @include margin0;        
-            padding-left: 20px;
-    }
-    h3 { 
-        font-size: 15px;
-        padding-top: 10px;        
-        font-weight: 700;}
-    p {
-        padding-top: 5px;
-        font-size: 14px;
-    }
-    .prix {
-        margin-right: 20px;
-        font-weight: bold;
-    }
-}
-.description-prix {
+.entreesplatsdesserts{
+    padding: 0 0 0 10px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 10px;
+}
+.all-plats, .all-entrees, .all-desserts {
+    margin-right:20px;
+    h2 {
+        font-size: 18px;
+        font-weight: lighter;
+    }
+}
+.colored-button {
+    padding-top: 30px;
+    padding-bottom: 60px;
 }
