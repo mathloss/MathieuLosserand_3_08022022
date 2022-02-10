@@ -1,41 +1,48 @@
 .fonctionnement {
-    padding: 0 0 30px 20px;
+    padding: 10px 0 30px 20px;
     h2 {
-        font-size: 1.5rem;        
+        padding-bottom: 10px;        
     }
 .all-btn-fonct {
+    padding-bottom: 20px;
     @media (min-width:600px){
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+
     }
 }
 .btn-fonct {
     width: 88%;
     min-width: 300px;
     max-width: 380px;
-    height:80px;
+    height:70px;
     background-color: $lightgrey;
     margin: 0 0 20px 15px;
     display: flex;
     align-items: center;
     border-radius: 20px;
-    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .1);
+    @include boxshadow2;
     i {
         padding-left: 10px;
         color: $grey2;
     }
     p {
-        padding-left: 20px;
-        color: black;
-        font-weight: bold;
+        color: black;                
     }
     @media  (min-width: 600px) {
         margin-right: 20px;
-    
     }
 }
-
+.text-fonctionnement1 {
+    padding-left: 25px;
+}
+.text-fonctionnement2 {
+    padding-left: 20px;
+}
+.text-fonctionnement3 {
+    padding-left: 15px;
+}
 .num {
     background-color: $primary;
     color:white;
@@ -48,7 +55,6 @@
     position: relative;
     left:-13px;
     p {
-        padding-left: 0;
         color: white;
         font-weight: bold;
     }

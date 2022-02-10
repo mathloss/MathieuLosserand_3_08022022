@@ -13,6 +13,7 @@
         background: linear-gradient(to bottom right,#FF79DA, #9356DC 95%);
         border: none;
         border-radius: 25px;
+        @include boxshadow1;
         
     }
 }

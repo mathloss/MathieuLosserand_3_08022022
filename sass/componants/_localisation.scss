@@ -1,18 +1,18 @@
 .localisation {
     background-color: #EAEAEA;
-    height:10vh;
+    height:50px;
     display: flex;
     align-items: center;
     justify-content: center;
     .localisation-icone-text {
-        margin: 0 auto;
+        display: flex;
+        justify-content: center;
     }
     input {
-        width: 180px;
+        width: 130px;
         border: none;
         background-color: #EAEAEA;
         padding-left: 20px;
-        font-size: 1.3rem;
         font-weight: bold;
     }
 }

@@ -6,11 +6,18 @@
 
 h1 {
   font-family: "Shrikhand", cursive;
-  font-weight: normal;
 }
 
 h2, h3, h4, h5, p, li, div, a {
   font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+input {
+  font-size: 16px;
 }
 
 a {
@@ -24,11 +31,10 @@ a :hover {
 footer {
   background-color: #353535;
   padding-bottom: 30px;
-  font-size: 1.2rem;
   color: white;
 }
 footer h1 {
-  font-size: 1.5rem;
+  font-size: 20px;
   font-family: "Shrikhand", cursive;
   margin-top: 0;
   padding-top: 20px;
@@ -53,10 +59,13 @@ footer a {
 }
 
 .fonctionnement {
-  padding: 0 0 30px 20px;
+  padding: 10px 0 30px 20px;
 }
 .fonctionnement h2 {
-  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+.fonctionnement .all-btn-fonct {
+  padding-bottom: 20px;
 }
 @media (min-width: 600px) {
   .fonctionnement .all-btn-fonct {
@@ -69,27 +78,34 @@ footer a {
   width: 88%;
   min-width: 300px;
   max-width: 380px;
-  height: 80px;
+  height: 70px;
   background-color: #F6F6F6;
   margin: 0 0 20px 15px;
   display: flex;
   align-items: center;
   border-radius: 20px;
-  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
 }
 .fonctionnement .btn-fonct i {
   padding-left: 10px;
   color: #7E7E7E;
 }
 .fonctionnement .btn-fonct p {
-  padding-left: 20px;
   color: black;
-  font-weight: bold;
 }
 @media (min-width: 600px) {
   .fonctionnement .btn-fonct {
     margin-right: 20px;
   }
+}
+.fonctionnement .text-fonctionnement1 {
+  padding-left: 25px;
+}
+.fonctionnement .text-fonctionnement2 {
+  padding-left: 20px;
+}
+.fonctionnement .text-fonctionnement3 {
+  padding-left: 15px;
 }
 .fonctionnement .num {
   background-color: #9356DC;
@@ -104,27 +120,26 @@ footer a {
   left: -13px;
 }
 .fonctionnement .num p {
-  padding-left: 0;
   color: white;
   font-weight: bold;
 }
 
 .localisation {
   background-color: #EAEAEA;
-  height: 10vh;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .localisation .localisation-icone-text {
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 .localisation input {
-  width: 180px;
+  width: 130px;
   border: none;
   background-color: #EAEAEA;
   padding-left: 20px;
-  font-size: 1.3rem;
   font-weight: bold;
 }
 
@@ -144,6 +159,7 @@ footer a {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC 95%);
   border: none;
   border-radius: 25px;
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
 .trait-vert {
@@ -166,16 +182,13 @@ footer a {
   margin: 0 auto;
 }
 
-.titre-accueil {
-  font-family: "Shrikhand", cursive;
-  display: flex;
-  justify-content: center;
-}
-
 header h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 30px;
+  margin: 0;
+  padding: 20px 0 10px 0;
   display: flex;
   justify-content: center;
-  font-size: 2.5rem;
 }
 
 .header-text {
@@ -183,23 +196,31 @@ header h1 {
   background-color: #F6F6F6;
 }
 .header-text .header-text-h2 {
-  padding: 30px 0 20px 0;
+  padding: 40px 0 10px 0;
 }
 .header-text h2 {
   margin: 0;
-  font-size: 2rem;
-  font-weight: 700;
+  font-weight: bolder;
   display: flex;
   justify-content: center;
 }
 .header-text .header-text-p {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 .header-text p {
   margin: 0;
   font-size: 18px;
+  font-weight: lighter;
   display: flex;
   justify-content: center;
+}
+
+.explorer {
+  padding-bottom: 60px;
+}
+
+.text-fonctionnement {
+  padding: 25px;
 }
 
 .restaurants {
@@ -208,6 +229,10 @@ header h1 {
 }
 .restaurants h2 {
   font-size: 1.5rem;
+}
+
+.all-cards-restaurant {
+  padding-bottom: 20px;
 }
 
 .cont-restaurant-card {
@@ -223,6 +248,7 @@ header h1 {
   background-color: white;
   margin-bottom: 20px;
   border-radius: 20px;
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.1);
 }
 .restaurant-card img {
   border-radius: 20px 20px 0 0;
@@ -233,11 +259,12 @@ header h1 {
   position: relative;
 }
 .restaurant-card .text-restaurant {
+  font-size: 14px;
   font-weight: bold;
-  color: #56BAA2;
+  color: #008766;
   border-radius: 3px;
   width: 80px;
-  height: 25px;
+  height: 30px;
   display: flex;
   align-items: center;
   background-color: #99E2D0;
@@ -257,11 +284,13 @@ header h1 {
 }
 .restaurant-card .text-infos h3 {
   margin: 0;
-  padding: 10px 0 0 20px;
+  padding: 10px 0 0 10px;
 }
 .restaurant-card .text-infos p {
   margin: 0;
-  padding-left: 20px;
+  font-size: 18px;
+  font-weight: lighter;
+  padding-left: 10px;
   padding-top: 5px;
 }
 @media (min-width: 600px) {

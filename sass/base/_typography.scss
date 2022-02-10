@@ -8,10 +8,16 @@ $font-text:'Roboto', sans-serif;
 
 h1 {
     font-family: $font-logo-titre;
-    font-weight: normal;
+    
 }
 h2, h3, h4, h5, p, li, div, a {
     font-family: $font-text;
+}
+h2 {
+    font-size: 24px;
+}
+input {
+    font-size: 16px;
 }
 a{
     text-decoration: none;
