@@ -1,5 +1,4 @@
 header h1{     
-    font-family: $font-logo-titre;
     font-size: 30px;
     @include margin0;
     padding: 20px 0 10px 0;
@@ -25,7 +24,6 @@ header h1{
     p {
         @include margin0;
         font-size: 18px;
-        font-weight: lighter;
         display: flex;
         justify-content: center;
     }
