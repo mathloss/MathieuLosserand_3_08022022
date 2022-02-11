@@ -1,11 +1,10 @@
-header h1{     
-    font-size: 30px;
-    @include margin0;
+header h1{  
+    @include margin0;   
+    font-size: 30px;    
     padding: 20px 0 10px 0;
     display: flex;
     justify-content: center;
 }
-
 .header-text {
     @include margin0;
     @include lightgrey-bc;
@@ -14,7 +13,6 @@ header h1{
         }
     h2 {
         @include margin0;        
-        font-weight: bolder;
         display: flex;
         justify-content: center;
     }

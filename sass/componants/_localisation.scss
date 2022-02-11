@@ -1,5 +1,5 @@
 .localisation {
-    background-color: #EAEAEA;
+    background-color: $greylocalisation;
     height:50px;
     display: flex;
     align-items: center;
@@ -11,7 +11,7 @@
     input {
         width: 130px;
         border: none;
-        background-color: #EAEAEA;
+        background-color: $greylocalisation;
         padding-left: 20px;
         font-weight: bold;
     }
