@@ -3,7 +3,8 @@
     justify-content: center;
     padding-bottom: 50px;
     margin-bottom: 20px;
-    button {               
+    .button {    
+        display:flex;           
         align-items: center;
         width:fit-content;
         height: 50px;
@@ -14,7 +15,11 @@
         border: none;
         border-radius: 25px;
         @include boxshadow1;
-        p {
+        :hover {
+            color: black;
+        }
+        p{
+            color: $white;
             @include margin0;
             padding-left: 40px;
             padding-right: 40px;
