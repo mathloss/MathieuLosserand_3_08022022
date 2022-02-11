@@ -81,7 +81,7 @@ footer a {
   display: flex;
   align-items: center;
   border-radius: 20px;
-  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.2);
 }
 .fonctionnement .btn-fonct i {
   padding-left: 10px;
@@ -123,6 +123,11 @@ footer a {
 
 .localisation {
   background-color: #EAEAEA;
+  box-shadow: inset 0 3px 3px #CFCFCF;
+  margin-left: -10px;
+  margin-right: -10px;
+  -webkit-box-shadow: inset 0px 3px 3px 0px #CFCFCF;
+  box-shadow: inset 0px 3px 3px 0px #CFCFCF;
   height: 50px;
   display: flex;
   align-items: center;
@@ -253,6 +258,10 @@ header h1 {
 
 .text-fonctionnement {
   padding: 25px;
+}
+
+.icone-color:hover i {
+  color: #9356DC;
 }
 
 .restaurants {
