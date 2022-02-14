@@ -8,6 +8,7 @@ header h1{
 .header-text {
     @include margin0;
     @include lightgrey-bc;
+    padding-bottom: 40px;
     .header-text-h2 {
             padding: 40px 0 10px 0;
         }
