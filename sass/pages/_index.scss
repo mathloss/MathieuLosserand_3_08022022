@@ -9,7 +9,7 @@ header h1{
     @include margin0;
     @include lightgrey-bc;
     padding-bottom: 40px;
-    .header-text-h2 {
+    &__h2 {
             padding: 40px 0 10px 0;
         }
     h2 {
@@ -17,7 +17,7 @@ header h1{
         display: flex;
         justify-content: center;
     }
-    .header-text-p {
+    &__p {
         padding-bottom: 30px;
     }
     p {
