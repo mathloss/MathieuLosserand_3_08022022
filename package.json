@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css"  
-  },
+    "sass": "sass --watch ./sass/main.scss:./css/style.css -w --style compressed",  
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+},
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mathloss/MathieuLosserand_3_08022022.git"
   },
   "author": "Mathieu Losserand",
-  "license": "ISC"
+  "license": "ISC",
+  "browserslist": "last 4 versions"
 }

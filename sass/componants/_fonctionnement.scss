@@ -22,6 +22,11 @@
     align-items: center;
     border-radius: 20px;
     @include boxshadow2;
+    &:hover {
+        background-color: $lightlight;
+        @include boxshadow3;
+
+    }
     i {
         padding-left: 10px;
         color: $grey2;
