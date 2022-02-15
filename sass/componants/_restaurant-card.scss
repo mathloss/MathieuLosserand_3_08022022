@@ -3,21 +3,11 @@
     padding: 30px 20px 20px 20px;
     background-color: $lightgrey;    
 }
-// conteneur toutes les cards
-.all-cards-restaurant {
-    padding-bottom: 20px;
-    @media (min-width: 600px) {
-        display:flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-}
 // conteneur card restaurant
 .cont-restaurant-card {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 //la card
@@ -27,7 +17,8 @@
     background-color: white;
     margin-bottom: 20px;
     border-radius: 20px; 
-    @include boxshadow1;   
+    @include boxshadow1; 
+    margin-right: 20px;  
     img {
         border-radius: 20px 20px 0 0 ;
     }
