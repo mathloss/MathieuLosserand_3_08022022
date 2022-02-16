@@ -1,0 +1,16 @@
+.heart-regular {
+    position:absolute;
+    transform: scale(.9);
+}
+.heart-solid {
+    position:relative;
+    opacity:0;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;    
+    background-image: linear-gradient(to bottom right,#FF79DA, #9356DC 95%);
+    transition: all 800ms;   
+    &:hover {
+        opacity:1;        
+    }
+}

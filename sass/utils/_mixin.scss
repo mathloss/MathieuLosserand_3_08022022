@@ -16,5 +16,9 @@
     box-shadow: 0 5px 13px 0 rgba(0, 0, 0, .2);
 }
 @mixin boxshadow3 {
-    box-shadow: 0 5px 13px 0 rgba(0, 0, 0, .8);
+    box-shadow: 0 5px 13px 0 rgba(147,86,220, .6);
 }
+@mixin boxshadow4 {
+    box-shadow: 0 0 15px 5px rgba(147,86,220, .8);
+}
+
