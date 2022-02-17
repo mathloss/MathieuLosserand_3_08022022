@@ -25,6 +25,9 @@
     &:hover {
         background-color: $lightlight;
         @include boxshadow3;
+        i {
+            color: $primary;
+        }
 
     }
     i {

@@ -1,0 +1,76 @@
+.spinner {
+    background-color: #FAFAFA;
+    position: fixed;
+    z-index: 1;
+    height:100%;
+    inset: 0;
+    // animation: retrait 1s 3s forwards;
+    animation: fadeout 2s 3s forwards; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h3 {
+        position: relative;
+        left: -20px;
+        padding-bottom: 20px;
+        font-size: 32px;
+    }
+}
+.three-dots {
+    width:150px;
+    height:50px;
+    margin-top: 20px;
+    position: relative;
+    left: -40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.dot1 {
+    width:20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: black;
+    animation: bigsmall .9s forwards infinite;
+}
+.dot2 {
+    width:20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: black;
+    animation: bigsmall .9s .3s forwards infinite;
+}
+.dot3 {
+    width:20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: black;
+    animation: bigsmall .9s .6s forwards infinite;
+}
+@keyframes retrait {
+    to {
+        transform: scale(0);
+    }
+}
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes bigsmall {
+    0% {
+        transform: scale(0);
+    }
+    50% {transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
