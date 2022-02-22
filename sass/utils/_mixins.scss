@@ -19,7 +19,7 @@
     box-shadow: 0 5px 13px 0 rgba(147,86,220, .6);
 }
 @mixin boxshadow4 {
-    box-shadow: 0 0 15px 5px rgba(147,86,220, .4);
+    box-shadow: 0 0 15px 5px rgba(147,86,220, .6);
 }
 @mixin hidden {
     overflow: hidden;
@@ -32,7 +32,4 @@
 }
 @mixin lineargradient {
     background: linear-gradient(to bottom right,#FF79DA, #9356DC 95%);
-}
-@mixin transboxshadow {
-    transition: box-shasow 1s linear;
 }
