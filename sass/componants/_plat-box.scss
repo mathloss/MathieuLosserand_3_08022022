@@ -1,31 +1,83 @@
-//conteneur des plats
+//plat-box
 .plat-box {
     width: 350px;
     height:70px;
-    background-color: white;
+    margin-right: auto;
+    background-color: variables.$white;
     border-radius: 20px;
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 10px 1px #0000001a;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    @include mixins.hidden;  
+    animation: fadein 1.5s ;
         h3, p {
-            @include margin0;        
+            @include mixins.margin0;        
             padding-left: 10px;
-    }
+            // having ... when smaller box
+            // hide the overflow
+            @include mixins.hidden;
+            // don't wrap the lines
+            @include mixins.whitespace;
+            // add ... 
+            @include mixins.textoverflow;
+                
+        }
     h3 { 
         font-size: 16px;
         padding-top: 15px;        
-        font-weight: 700;}
+        font-weight: 700;
+    }
     p {
         padding-top: 8px;
         font-size: 14px;
     }
-    .prix {
-        margin-right: 20px;
-        font-weight: bold;
+    &:hover {
+        .decale{
+            margin-right: 0;
+        }
+        // animation on i
+        i {
+            animation: rotation 1s;
+        }
     }
+.plat-text {
+    // having ... when smaller box see line 17
+    @include mixins.hidden;            
+    @include mixins.whitespace;
+    @include mixins.textoverflow;
+    
 }
-.description-prix {
+// div to be moved when :hover
+.decale {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 10px;
+    // -60px margin back to 0 for the movement
+    margin-right: -60px;
+    margin-left: auto;
+    transition: margin-right 1s;
+    &__prix {
+        margin-left: auto;    
+        padding: 35px 20px 0 0;
+        font-weight: bold;
+    }
+    &__check {
+        background-color: variables.$third;
+        width: 60px;
+        border-radius: 0 20px 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i {
+            color: variables.$third;
+            background-color: variables.$white;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+        }
+    }
+}
 }

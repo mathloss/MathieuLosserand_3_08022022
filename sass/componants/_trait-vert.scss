@@ -1,7 +1,8 @@
-// trait sous entrees plats et desserts
+// green border under h2
 .trait-vert {
     width:45px;
-    margin-top: -10px;
+    position: relative;
+    top: -10px;
     padding-bottom: 20px;
-    border-top: 3px $third solid;
+    border-top: 3px variables.$third solid;
 }

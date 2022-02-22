@@ -1,22 +1,41 @@
+// general behaviour h3 
 .spinner {
-    background-color: #FAFAFA;
+    background-color: variables.$lightlight;
     position: fixed;
     z-index: 1;
     height:100%;
-    inset: 0;
-    // animation: retrait 1s 3s forwards;
-    animation: fadeout 2s 3s forwards; 
+    //anchoring element on corners
+    inset: 0;    
+    // display text and image
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    // animation: retrait 1s 3s forwards;
+    animation: fadeout 2s 3s forwards ease-in-out; 
+    @media screen and (max-width:600px) {
+        img {            
+            padding-left: 40px ;
+            position: relative;
+            top: -20px;
+        }       
+    }
     h3 {
         position: relative;
         left: -20px;
         padding-bottom: 20px;
         font-size: 32px;
+        animation: imgfadeout 2s 2s forwards; 
+        @media screen and (max-width: 600px){            
+                    left: 20px;
+                }   
+        }
+    img {
+        animation: imgfadeout 2s 2s forwards; 
     }
 }
+
+// the 3 dots animation
 .three-dots {
     width:150px;
     height:50px;
@@ -27,50 +46,31 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    animation: imgfadeout 2s 2s forwards; 
+    @media screen and (max-width: 600px) {
+            left: 0;                 
+    }
 }
 .dot1 {
     width:20px;
     height: 20px;
     border-radius: 10px;
-    background-color: black;
+    background-color: variables.$black;
     animation: bigsmall .9s forwards infinite;
 }
 .dot2 {
     width:20px;
     height: 20px;
     border-radius: 10px;
-    background-color: black;
+    background-color: variables.$black;
     animation: bigsmall .9s .3s forwards infinite;
 }
 .dot3 {
     width:20px;
     height: 20px;
     border-radius: 10px;
-    background-color: black;
+    background-color: variables.$black;
     animation: bigsmall .9s .6s forwards infinite;
 }
-@keyframes retrait {
-    to {
-        transform: scale(0);
-    }
-}
-@keyframes fadeout {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-        z-index: -1;
-    }
-}
 
-@keyframes bigsmall {
-    0% {
-        transform: scale(0);
-    }
-    50% {transform: scale(1);
-    }
-    100% {
-        transform: scale(0);
-    }
-}
+

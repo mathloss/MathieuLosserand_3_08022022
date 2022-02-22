@@ -5,11 +5,13 @@
 .heart-solid {
     position:relative;
     opacity:0;
+    // transparent to be able to use the background-color
     color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;    
+    background-clip: text;      
     background-image: linear-gradient(to bottom right,#FF79DA, #9356DC 95%);
-    transition: all 800ms;   
+    transition: opacity 800ms;   
+    // the solid icon moves over the regular one
+    // change :hover by :active to change the behaviour 
     &:hover {
         opacity:1;        
     }

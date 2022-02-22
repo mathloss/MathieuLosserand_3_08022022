@@ -1,3 +1,4 @@
+// commander and explorer nos restaurant button 
 .button {    
     display:flex; 
     justify-content: center;          
@@ -10,10 +11,11 @@
     font-size: 18px;
     font-weight: bold;
     color: white;
-    background: linear-gradient(to bottom right,#FF79DA, #9356DC 95%);
+    @include mixins.lineargradient;
     border: none;
     border-radius: 25px;
-    @include boxshadow1;
+    @include mixins.boxshadow1;
+    // scale up by 15% when :hover
     transform: scale(1);
     transition: transform 400ms;
     &:hover {

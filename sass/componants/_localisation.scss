@@ -1,8 +1,6 @@
 .localisation {
-    background-color: $greylocalisation;
-    //ombre à l'intérieur de la div   
-    -webkit-box-shadow: inset 0px 5px 2px 0px #CFCFCF;
-    -moz-box-shadow: inset 0px 5px 2px 0px #CFCFCF;
+    background-color: variables.$greylocalisation;
+    // shadow inside the div using inset
     box-shadow: inset 0px 5px 2px 0px #CFCFCF;
     height:50px;
     display: flex;
@@ -15,7 +13,7 @@
     input {
         width: 130px;
         border: none;
-        background-color: $greylocalisation;
+        background-color: variables.$greylocalisation;
         padding-left: 20px;
         font-weight: bold;
     }

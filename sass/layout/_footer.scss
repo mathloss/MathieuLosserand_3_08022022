@@ -1,5 +1,5 @@
 footer{
-    background-color: $grey;
+    background-color: variables.$grey;
     padding: 20px 0 30px 0;
     color:white;
     h1 {
@@ -15,10 +15,10 @@ footer{
     }
     i {
         font-size: 12px;
-        color: $white;
+        color: variables.$white;
     }
     a {
-        color: $white;
+        color: variables.$white;
         font-style: normal;
         text-decoration: none;
         padding-left: 0;

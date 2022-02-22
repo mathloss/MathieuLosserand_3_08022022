@@ -1,45 +1,52 @@
-// les cards des menus par restaurant
+// cards menus per restaurant
 .restaurants {
     padding: 30px 20px 20px 20px;
-    background-color: $lightgrey;    
+    background-color: variables.$lightgrey;    
 }
 
-// conteneur card restaurant
+// container card restaurant
 .cont-restaurant-card {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-//la card
+// the card
 .restaurant-card {
     width: 335px;
     height:250px;
-    background-color: white;
+    background-color: variables.$white;
     margin-bottom: 20px;
     border-radius: 20px; 
-    @include boxshadow1; 
+    @include mixins.boxshadow1; 
     margin-right: 20px;  
     img {
         border-radius: 20px 20px 0 0 ;
     }
     &:hover {
         text-decoration: none;
-        color: black;
-        @include boxshadow4;
+        color: variables.$black;
+        @include mixins.boxshadow4;
+        transition: box-shadow .6s linear;
+        /* color option when :hover
+        h3,p {
+            color: variables.$primary;
+        }
+        */
     }
 .image-restaurant {
     height: 170px;
     }
-// Nouveau sur image du restaurant
+// Nouveau on image
 .text-restaurant {
     width: 80px;
     height: 30px;
     font-size: 14px;
     font-weight: bold;
-    background-color: #99E2D0;
+    background-color: variables.$third;
     color: #008766;
     border-radius: 3px;
+    // positioning
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,7 +54,7 @@
     bottom: 160px;
     left: 240px;
 }
-// texte de la card
+// texte of the card card
 .all-infos {
     display:flex;
     flex-direction: row;

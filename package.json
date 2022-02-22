@@ -1,7 +1,7 @@
 {
   "name": "mathieulosserand_3_02022022",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projet 3 : Dynamisez une page web avec des animations CSS - Ohmyfood ",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./css/style.css -w --style compressed",  
@@ -14,5 +14,6 @@
   },
   "author": "Mathieu Losserand",
   "license": "ISC",
-  "browserslist": "last 4 versions"
+  "browserslist": "last 4 versions",
+  "homepage": "https://mathloss.github.io/MathieuLosserand_3_08022022/"
 }

@@ -1,0 +1,38 @@
+@use "./variables";
+// background
+
+@mixin lightgrey-bc {
+    background-color: variables.$lightgrey;    
+}
+// margin
+@mixin margin0 {
+    margin: 0;
+}
+// box-shadow
+@mixin boxshadow1 {
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .1);
+}
+@mixin boxshadow2 {
+    box-shadow: 0 5px 13px 0 rgba(0, 0, 0, .2);
+}
+@mixin boxshadow3 {
+    box-shadow: 0 5px 13px 0 rgba(147,86,220, .6);
+}
+@mixin boxshadow4 {
+    box-shadow: 0 0 15px 5px rgba(147,86,220, .4);
+}
+@mixin hidden {
+    overflow: hidden;
+}
+@mixin whitespace {
+    white-space: nowrap;
+} 
+@mixin textoverflow {
+    text-overflow: ellipsis;
+}
+@mixin lineargradient {
+    background: linear-gradient(to bottom right,#FF79DA, #9356DC 95%);
+}
+@mixin transboxshadow {
+    transition: box-shasow 1s linear;
+}

@@ -1,0 +1,64 @@
+// loader fadeout
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+// loader scaling option 2 
+@keyframes bigsmall {
+    0% {
+        transform: scale(0);
+    }
+    50% {transform: scale(1);}
+    // Option 1 : The dots stay full longer
+    /*
+    35% {transform: scale(1);
+    }
+    65% {transform: scale(1);
+    }*/
+    100% {
+        transform: scale(0);
+    }
+}
+
+// loader scaling down option 1
+/*
+@keyframes retrait {
+    to {
+        transform: scale(0);
+    }
+}*/
+
+// plat-box fade in from bottom 
+@keyframes fadein {
+    from {
+        transform: translateY(300%) scale(0.5);
+        opacity:0;
+    }
+    to {
+        transform: translateY(0) scale(1);        
+        opacity:1;
+    }
+}
+
+//check rotation
+@keyframes rotation {
+    to {
+        // 3 turns
+        transform: rotate(3turn);
+    }
+}
+
+@keyframes imgfadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

@@ -1,19 +1,19 @@
 header h1{  
-    @include margin0;   
+    @include mixins.margin0;   
     font-size: 30px;    
     padding: 20px 0 10px 0;
     display: flex;
     justify-content: center;
 }
 .header-text {
-    @include margin0;
-    @include lightgrey-bc;
+    @include mixins.margin0;
+    @include mixins.lightgrey-bc;
     padding-bottom: 40px;
     &__h2 {
             padding: 40px 0 10px 0;
         }
     h2 {
-        @include margin0;        
+        @include mixins.margin0;        
         display: flex;
         justify-content: center;
     }
@@ -21,7 +21,7 @@ header h1{
         padding-bottom: 30px;
     }
     p {
-        @include margin0;
+        @include mixins.margin0;
         font-size: 18px;
         display: flex;
         justify-content: center;
@@ -33,4 +33,3 @@ header h1{
 .text-fonctionnement {
     padding: 25px;
 }
-
